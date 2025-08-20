@@ -18,6 +18,19 @@ services:
       ADMIN_PASSWORD: ${ADMIN_PASSWORD}
       USE_SSL: 1
       DEPLOY_SAMPLEDATA: 1
+      MAGENTO_VERSION: "2.4.8"
+      PHP_VERSION: "8.2"
+      DB_PORT: "3306"
+      DB_NAME: magento
+      DB_USER: magento
+      DB_PASSWORD: magento
+      OPENSEARCH_PORT: "9200"
+      OPENSEARCH_INDEX_PREFIX: magento2
+      OPENSEARCH_TIMEOUT: "15"
+      ADMIN_NAME: Khushboo
+      ADMIN_LASTNAME: Singhvi
+      ADMIN_EMAIL: khushboo@example.com
+      ADMIN_URLEXT: admin
     ports:
       - 8080:8080
     depends_on:
